@@ -64,6 +64,10 @@ const CURRENCY_SYMBOLS = {
 Object.freeze(CURRENCY_SYMBOLS);
 export CURRENCY_SYMBOLS;
 
-export default function getCurrencySymbol(symbol) {
-	return CURRENCY_SYMBOLS[symbol];
+export default function getCurrencySymbol(code) {
+  if (typeof code !== 'string') return undefined;
+
+  const currencyCode = code.toUpperCase();
+
+	return CURRENCY_SYMBOLS[currencyCode];
 }
