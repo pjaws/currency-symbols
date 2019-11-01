@@ -1,0 +1,11 @@
+{
+  "name": "currency-symbols",
+  "version": "0.1.0",
+  "description": "A tiny library providing mappings of currency codes to symbols",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Matthew Jaworski",
+  "license": "MIT"
+}
