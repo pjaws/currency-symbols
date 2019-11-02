@@ -29,45 +29,43 @@ export const USD = '$'; // US Dollar
 export const VND = '₫'; // Vietnamese Dong
 export const XMR = 'ɱ'; // Monero
 
-const CURRENCY_SYMBOLS = {
-	AUD,
-	BDT,
-	BTC,
-	CAD,
-	CNY,
-	CRC,
-	ETH,
-	EUR,
-	GBP,
-	GEL,
-	HKD,
-	ILS,
-	INR,
-	JPY,
-	KRW,
-	LTC,
-	MXN,
-	NGN,
-	NZD,
-	PHP,
-	PLN,
-	PYG,
-	RUB,
-	SGD,
-	THB,
-	TRY,
-	UAH,
-	USD,
-	VND,
-	XMR,
+export const CURRENCY_SYMBOLS = {
+  AUD,
+  BDT,
+  BTC,
+  CAD,
+  CNY,
+  CRC,
+  ETH,
+  EUR,
+  GBP,
+  GEL,
+  HKD,
+  ILS,
+  INR,
+  JPY,
+  KRW,
+  LTC,
+  MXN,
+  NGN,
+  NZD,
+  PHP,
+  PLN,
+  PYG,
+  RUB,
+  SGD,
+  THB,
+  TRY,
+  UAH,
+  USD,
+  VND,
+  XMR,
 };
-Object.freeze(CURRENCY_SYMBOLS);
-export CURRENCY_SYMBOLS;
 
-export default function getCurrencySymbol(code) {
+export function getCurrencySymbol(code) {
   if (typeof code !== 'string') return undefined;
 
   const currencyCode = code.toUpperCase();
 
-	return CURRENCY_SYMBOLS[currencyCode];
+  return CURRENCY_SYMBOLS[currencyCode];
 }
