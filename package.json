@@ -1,6 +1,6 @@
 {
   "name": "currency-symbols",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A tiny library providing mappings of currency codes to currency symbols",
   "main": "dist/index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-import { getCurrencySymbol } from '../src/index';
+import getCurrencySymbol from '../src/index';
 
 describe('getCurrencySymbol()', () => {
   describe('with valid input', () => {
