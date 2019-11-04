@@ -13,7 +13,7 @@ Currently supports all currency symbols with a Unicode value. Support for other 
 **Use the helper function**
 
 ```
-import { getCurrencySymbol } from 'currency-symbols';
+import getCurrencySymbol from 'currency-symbols';
 
 getCurrencySymbol('USD'); // '$'
 getCurrencySymbol('EUR'); // '€'
