@@ -69,3 +69,8 @@ export function getCurrencySymbol(code) {
 
   return CURRENCY_SYMBOLS[currencyCode];
 }
+
+export default {
+  getCurrencySymbol,
+  CURRENCY_SYMBOLS,
+};
